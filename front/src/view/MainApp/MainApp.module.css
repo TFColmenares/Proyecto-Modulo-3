@@ -1,0 +1,24 @@
+.main-app {
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.page-container {
+  min-height: calc(100vh - 80px);
+}
+
+.page-content {
+  padding: 120px 20px 40px;
+  text-align: center;
+  color: #ff0000;
+}
+
+.page-content h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.page-content p {
+  font-size: 1.2rem;
+  color: #be00cc;
+}

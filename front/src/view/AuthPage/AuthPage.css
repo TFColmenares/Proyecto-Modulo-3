@@ -1,0 +1,335 @@
+.auth-page-style {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #001100 50%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.floating-shapes {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.shape {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, #ff0000, #ff2d2d);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.shape:nth-child(1) {
+  top: 10%;
+  left: 10%;
+}
+.shape:nth-child(2) {
+  top: 20%;
+  right: 15%;
+}
+.shape:nth-child(3) {
+  top: 60%;
+  left: 5%;
+}
+.shape:nth-child(4) {
+  bottom: 20%;
+  right: 10%;
+}
+.shape:nth-child(5) {
+  bottom: 10%;
+  left: 20%;
+}
+.shape:nth-child(6) {
+  top: 40%;
+  right: 30%;
+}
+
+.auth-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  max-width: 1200px;
+  width: 100%;
+  gap: 4rem;
+  align-items: center;
+
+}
+
+/* Lado Izquierdo - Información */
+.auth-info-section {
+  padding: 2rem;
+}
+
+.brand-section {
+  margin-bottom: 3rem;
+}
+
+.brand-title {
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
+  color: #6d00a0;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.brand-tagline {
+  font-family: var(--font-sport);
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+}
+
+.description-section {
+  margin-bottom: 3rem;
+}
+
+.description-section h2 {
+  font-family: var(--font-heading);
+  color: #6cffc9;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.description-section p {
+  font-family: var(--font-primary);
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.benefits-section- {
+  margin-bottom: 3rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 255, 0, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgb(255, 38, 38);
+}
+
+.benefit-item:hover {
+  background: rgba(0, 255, 0, 0.1);
+  border-color: #5cffde;
+  transform: translateX(10px);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+.benefit-text h3 {
+  font-family: var(--font-sport);
+  color: #a3ffd4;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.benefit-text p {
+  font-family: var(--font-primary);
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.stats-mini {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.stat-mini {
+  text-align: center;
+}
+
+.stat-number-mini {
+  font-family: var(--font-numbers);
+  font-size: 2rem;
+  color: #ffffff;
+  display: block;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.stat-label-mini {
+  font-family: var(--font-primary);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Lado Derecho - Formularios */
+.auth-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+  margin-left: 6rem;
+}
+
+.form-container {
+  background: rgba(17, 17, 17, 0.95);
+  border: 2px solid #e12d2d;
+  border-radius: 20px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 450px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgb(255, 0, 0);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  font-family: var(--font-heading);
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.form-header p {
+  font-family: var(--font-primary);
+  color: #ffffff;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.form-tabs {
+  display: flex;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #333333;
+}
+
+.tab {
+  flex: 1;
+  padding: 1rem;
+  background-color: #222222;
+  border: none;
+  color: #aa00cc;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-family: var(--font-buttons);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #ff0000, #ff2d2d);
+  color: #000000;
+  font-weight: bold;
+}
+
+.tab:hover:not(.active) {
+  background-color: #333333;
+  color: #ea00ff;
+}
+
+.form-content {
+  margin-bottom: 2rem;
+}
+
+.form-footer{
+  border-top: 1px solid #333333;
+  padding-top: 1.5rem;
+}
+
+
+
+@media (max-width: 1024px) {
+  .auth-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .brand-title {
+    font-size: 3.5rem;
+  }
+
+  .description-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .stats-mini {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    gap: 1.5rem;
+  }
+
+  .auth-info-section,
+  .form-container {
+    padding: 1.5rem;
+  }
+
+  .brand-title {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+  }
+
+  .description-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .benefit-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+  }
+
+  .stats-mini {
+    gap: 1rem;
+  }
+}

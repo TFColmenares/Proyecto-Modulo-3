@@ -1,0 +1,250 @@
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #001100 50%, #000000 100%);
+  padding-top: 40px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.user-welcome {
+  margin-bottom: 2rem;
+}
+
+.user-avatar {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.guest-welcome{
+ margin-bottom: 2rem;
+
+}
+.guest-avatar{
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.hero-section h2{
+  font-size: 1.5rem;
+  color: #f2f3f4;
+  margin-bottom: 5rem;
+  text-shadow: 2px 2px 4px rgba(14, 14, 15, 0.7);
+  font-weight: bold;
+
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  color: #f2f3f4;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(14, 14, 15, 0.7);
+  font-weight: bold;
+
+}
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+}
+
+.floating-element {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(50deg, #ff0000, #f9f9f9);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.floating-element:nth-child(1) {
+  top: 10%;
+  left: 10%;
+}
+.floating-element:nth-child(2) {
+  top: 20%;
+  right: 15%;
+}
+.floating-element:nth-child(3) {
+  top: 60%;
+  left: 5%;
+}
+.floating-element:nth-child(4) {
+  bottom: 20%;
+  right: 10%;
+}
+.floating-element:nth-child(5) {
+  bottom: 10%;
+  left: 20%;
+}
+.floating-element:nth-child(6) {
+  top: 40%;
+  right: 30%;
+}
+.floating-element:nth-child(7) {
+  top: 70%;
+  left: 40%;
+}
+.floating-element:nth-child(8) {
+  bottom: 40%;
+  right: 40%;
+}
+
+.quick-actions {
+  padding: 60px 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.quick-actions h2{
+ text-align: center;
+ color: rgb(255, 255, 255);
+ text-shadow: #000000;
+ justify-content: center;
+ margin-bottom: 3rem;
+ font-size: 2rem;
+}
+
+.actions-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quick-action {
+  background: rgba(17, 17, 17, 0.8);
+  border: 2px solid #0037ff;
+  color: #ffffff;
+  padding: 1.2rem 2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.description-section {
+  padding: 2rem;
+  background: linear-gradient(50deg, #53564f 0%, #000000 100%);
+  color: #fff;
+  text-align: center;
+  border-radius: 1rem;
+  margin: auto;
+  max-width: 900px;
+  box-shadow: 0 0 20px rgb(255, 0, 0);
+}
+
+.description-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00ff88;
+}
+
+.description-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.courts-section {
+  padding: 3rem 2rem;
+  background: #101010;
+  color: #fff;
+  text-align: center;
+
+}
+
+.courts-section h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-shadow: black;
+}
+
+.courts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.court-card {
+  background: #000000;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgb(255, 0, 0);
+  transition: transform 0.3s ease;
+}
+
+.court-card:hover {
+  transform: translateY(-5px);
+}
+
+.court-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.court-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #ff00bb;
+  
+}
+
+.court-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .actions-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quick-action {
+    width: 100%;
+    max-width: 300px;
+  }
+}
